@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  background-color: #282726;
+  font-family: inter;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+} 
+
+Header h1{
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #F9F4DA;
+  margin-bottom: 0.5rem;
+}
+
+Header p{
+  font-size:1rem;
+  font-weight: 600;
+  color: #8E8E8E;
+  margin-bottom: 2rem;
+}
+
+.feed-back-banner-cont{
+  background-color: #323232;
+  color: #F9F4DA;
+  width: 100%;
+  height: 58px;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 0.4rem 0rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.won{
+  background-color: #10A95B;
+
+}
+
+.lost{
+  background-color: #BA2A2A;
+}
+
+.lost-lang-bg{
+  background-color:#571d15;
+}
+
+.right-answer{
+  background-color:#307c55;
+}
+
+.feed-back-banner-cont h2{
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+h1, h2, p{
+  margin: 0;
+}
+
+.main-container{
+  margin-top:23%;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chips-cont{
+  width: 80%;
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  
+}
+
+.chips-cont button{
+  border: none;
+  border-radius: 3px;
+}
+
+.chips-cont button.lost {
+  opacity: 0.7; /* Aplica semitransparencia al botón */
+  position: relative; /* Necesario para posicionar el emoji en el centro */
+}
+
+.chips-cont button.lost::before {
+  content: "💀"; /* Emoji de calavera */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem; /* Tamaño del emoji, ajusta según necesites */
+  pointer-events: none; /* No bloquea la interacción con el botón */
+  color: inherit; /* Hereda el color del texto del botón */
+}
+
+.word-to-guess-cont{
+  margin-top: 1.5rem ;
+  display: flex;
+  gap: 3px;
+}
+
+.word-to-guess-cont span{
+  font-weight: 700;
+  font-size: 1.125rem;
+  background-color: #323232;
+  min-width: 2.5rem;
+  min-height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  border-bottom: #F9F4DA 1px solid;
+}
+
+.keyboard-cont{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-top: 1.3rem;
+
+}
+
+.keyboard-cont button.keyPad{
+  background-color: #FCBA29;
+  color: #1E1E1E;
+  padding: 6px 0px;
+  width: 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+.keyboard-cont button.wrong{
+  background-color: #EC5D49;
+}
+
+.keyboard-cont button.right{
+  background-color: #10A95B;
+
+}
+
+.keyboard-cont button.disabled{
+  opacity: 0.2;
+  cursor:default;
+
+}
+
+.new-game-btn{
+  width: 228px;
+  height: 40px;
+  background-color: #11B5E5;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inter;
+
+}
+
+.not-guessed-letters{
+  color: #EC5D49;
+}
