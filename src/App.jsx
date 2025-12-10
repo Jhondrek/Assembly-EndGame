@@ -63,7 +63,7 @@ function App() {
         <Chips wrongGuesesCount = {wrongGuesesCount}/>
         <WordToGuess wordToGuess = {wordToGuess} guessedLetters = {guessedLetters} isGameLost = {isGameLost}/>
         <Keyboard wordToGuess = {wordToGuess} addGuessedLetter ={addGuessedLetter} guessedLetters = {guessedLetters} gameEnded = {gameEnded} />
-        {gameEnded && <button onClick={()=>{restartGame()}} className="new-game-btn">Juego nuevo</button>}
+        {gameEnded && <button onClick={()=>{restartGame()}} className="new-game-btn">New Game</button>}
       </main>
     </>
 

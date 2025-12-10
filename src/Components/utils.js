@@ -1,14 +1,14 @@
 export function getFarewellText(language) {
     const options = [
-        `R.I.P ${language}! `,
-        `¡Noooo! ¿Por qué, ${language}?`,
-        `desapareciste a ${language}, y yo con medio proyecto terminado..`,
-        `${language}, que tus variables siempre estén definidas en otro universo.`,
-        `¡Que la fuerza te acompañe, ${language}!`,
-        `Y ahora ${language}...`,
-        `Te extrañaremos ${language}`,
-        `Un último respiro para ti, ${language}, antes de caer en la oscuridad..`,
-        `¡Y así desaparece un grande, descansa ${language}`
+    `R.I.P ${language}!`,
+    `Nooo! Why, ${language}?`,
+    `${language} vanished, and I was halfway through my project...`,
+    `${language}, may your variables always be defined in another universe.`,
+    `May the force be with you, ${language}!`,
+    `And now ${language}...`,
+    `We will miss you, ${language}!`,
+    `One last breath for you, ${language}, before fading into the darkness...`,
+    `And thus a legend disappears, rest in peace ${language}.`
     ];
 
     const randomIndex = Math.floor(Math.random() * options.length);
@@ -16,17 +16,17 @@ export function getFarewellText(language) {
 }
 
 export function getSuccessText(language) {
-    const options = [
-        `¡Bien hecho! Has salvado a ${language}... por ahora.`,
-        `¡Sí! ${language} respira tranquilo, gracias a ti.`,
-        `¡Bravo! ${language} se queda un poco más en este mundo.`,
-        `¡Excelente! ${language} vive para compilar otro día.`,
-        `¡Lo lograste! ${language} puede seguir siendo un héroe del código.`,
-        `¡Hurra! ${language} agradece tu precisión.`,
-        `¡Impresionante! ${language} sigue siendo parte del ecosistema, gracias a ti.`,
-        `¡Increíble! Has protegido a ${language} de una muerte inminente!.`,
-        `¡Maravilloso! ${language} todavía tiene una oportunidad.`,
-        `¡Felicidades! ${language} está a salvo... por ahora.`
+        const options = [
+    `Well done! You saved ${language}... for now.`,
+    `Yes! ${language} can breathe easy thanks to you.`,
+    `Bravo! ${language} gets to stay in this world a little longer.`,
+    `Excellent! ${language} lives to compile another day.`,
+    `You did it! ${language} can keep being a code hero.`,
+    `Hooray! ${language} thanks you for your accuracy.`,
+    `Amazing! ${language} remains part of the ecosystem thanks to you.`,
+    `Incredible! You protected ${language} from an imminent doom!`,
+    `Wonderful! ${language} still has a chance.`,
+    `Congratulations! ${language} is safe... for now.`
     ];
 
     const randomIndex = Math.floor(Math.random() * options.length);
