@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './App.css'
 import {Header} from './Components/Header.jsx'
 import {FeedbackBanner} from './Components/FeedbackBanner.jsx'
-import { Chips } from './Components/chips.jsx'
+import { Chips } from './Components/Chips.jsx'
 import {WordToGuess} from './Components/WordToGuess.jsx'
 import { Keyboard } from "./Components/keyboard.jsx";
 import { languages } from "./Components/languages.js"
